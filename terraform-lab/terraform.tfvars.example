@@ -1,0 +1,129 @@
+# Copyright 2026 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# ============================================
+# REQUIRED VARIABLES
+# ============================================
+
+# Your Google Cloud Project ID
+gcp_project_id = "your-gcp-project-id"
+
+# ============================================
+# OPTIONAL VARIABLES (with defaults)
+# ============================================
+
+# -------------------------------------------------------------------
+# Project Configuration
+# -------------------------------------------------------------------
+
+# GCP region for resource deployment
+# gcp_region = "us-central1"
+
+# GCP zone for the GCE instance
+# gcp_zone = "us-central1-a"
+
+# Environment tag (e.g., dev, staging, prod)
+# environment = "dev"
+
+# Custom labels for resources (optional)
+# labels = {
+#   "team"        = "engineering"
+#   "cost-center" = "development"
+# }
+
+# -------------------------------------------------------------------
+# Developer Configuration
+# -------------------------------------------------------------------
+
+# Username of the user (optional)
+# username = "your-email@company.com"
+
+# -------------------------------------------------------------------
+# Network Configuration
+# -------------------------------------------------------------------
+
+# Name of the VPC network
+# vpc_name = "crd-gce-vpc"
+
+# IP range for the GCE subnet
+# subnetwork_range = "10.3.0.0/16"
+
+# -------------------------------------------------------------------
+# Service Account Configuration
+# -------------------------------------------------------------------
+
+# Service account ID for the GCE instance
+# gce_service_account_id = "crd-gce-sa"
+
+# -------------------------------------------------------------------
+# Compute Configuration
+# -------------------------------------------------------------------
+
+# Name of the GCE instance
+# instance_name = "crdhost-autoinstall"
+
+# Machine type for the GCE instance
+# Options: e2-standard-4, e2-standard-8, e2-standard-16, n2-standard-4, etc.
+# machine_type = "e2-standard-16"
+
+# Boot disk size in GB
+# boot_disk_size_gb = 200
+
+# -------------------------------------------------------------------
+# Desktop Environment Configuration
+# -------------------------------------------------------------------
+
+# Whether to install XFCE desktop environment
+install_xfce = false
+
+# Whether to install Cinnamon desktop environment
+install_cinnamon = true
+
+# Whether to install Docker
+# install_docker = false
+
+# Whether to install Antigravity Hub
+# install_antigravity_hub = true
+
+# URL for the Antigravity Hub installation package
+antigravity_hub_url = "https://storage.googleapis.com/antigravity-public/antigravity-hub/2.1.4-6481382726303744/linux-x64/Antigravity.tar.gz"
+
+# Whether to install Antigravity IDE
+# install_antigravity_ide = true
+
+# URL for the Antigravity IDE installation package
+antigravity_ide_url = "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/2.1.1-6123990880747520/linux-x64/Antigravity%20IDE.tar.gz"
+
+# -------------------------------------------------------------------
+# CLI Tools Configuration
+# -------------------------------------------------------------------
+
+# Whether to install Antigravity CLI (agy)
+# install_agy = true
+
+# Whether to install uv (Python package installer)
+# install_uv = true
+
+# Whether to install Claude Code
+# install_claude = true
+
+# -------------------------------------------------------------------
+# API Timing Configuration
+# -------------------------------------------------------------------
+
+# Duration to wait after enabling APIs (e.g., '30s')
+# api_activation_wait = "10s"
+
+# Duration to wait after setting organization policies (e.g., '60s')
+# org_policy_wait = "60s"
